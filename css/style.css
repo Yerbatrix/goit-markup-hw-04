@@ -546,5 +546,5 @@ header > .container {
 }
 
 .footer-social-inner-icon {
-  fill: currentColor;
+  fill: var(--cloud);
 }
