@@ -6,6 +6,7 @@
   --cloud: #f4f4fd;
   --CORNFLOWER: #e7e9fc;
   --WHITE: #fff;
+  --LIGHT-SLATE: #8e8f99;
 }
 
 h1,
@@ -91,6 +92,9 @@ body {
 
 .header-border {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 header > .container {
@@ -169,9 +173,16 @@ header > .container {
 .first-section {
   background: var(--studio-color);
   padding: 188px 0;
-  background-image: url(https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1698019200&Signature=eSYGHiPZsTW2yRZR-jtYU4eqSMZK8UAjCn3A3U3ZWzCRfXSmZvDjyWO7F798YsBOinS1e8DTyR0wYa8txXCLOq7clrKP8zKQ8tDADen-3C9h5dH~OS5hoWxNR2EWEWpaoaLzWEdJWeTdeP4LZ~3KKipS7Bimc5Ih8S~pdQLY3xo-uUFzek0Wd0E79e31UEAY5RJYuVj7KHjn9~J1uFcFymOBZ1meAyREesqUswe9IV0RT2O190wGYuzoof2kueIqfdOXNvtWaKYSezVEkgaLEkCUZl6NE6-b9xTNAO8R6e2SOFj65P0WqcmyQ3mLUtXzIcAzHO81VZdNb6H2s-USxw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1440px;
+  background-position: center;
+  margin: 0 auto;
 }
 .first-section-title {
   font-size: 56px;
@@ -223,6 +234,11 @@ header > .container {
 .sec-sect-icon-background {
   background-color: var(--cloud);
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
 }
 
 .sec-sect-item-name {
@@ -314,10 +330,34 @@ header > .container {
 
 .socialmedia-teamnav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 8px;
+  gap: 24px;
 }
 
+.socialmedia-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.socialmedia-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialmedia-link:focus,
+.socialmedia-link:hover {
+  background-color: #404bbf;
+}
+
+.socialmedia-innericon {
+  fill: var(--cloud);
+}
 .portfolio-section {
   padding: 96px 0 120px 0;
 }
@@ -405,7 +445,32 @@ header > .container {
 .customers-list {
   display: flex;
   gap: 24px;
-  justify-content: space-evenly;
+}
+
+.customer-card {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
+.customer-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--LIGHT-SLATE);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.customer-icon {
+  fill: currentColor;
 }
 
 .footer {
