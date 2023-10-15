@@ -350,8 +350,9 @@ header > .container {
   justify-content: center;
 }
 
+.socialmedia-link:hover,
 .socialmedia-link:focus,
-.socialmedia-link:hover {
+.socialmedia-link:active {
   background-color: #404bbf;
 }
 
@@ -464,7 +465,8 @@ header > .container {
 }
 
 .customer-link:hover,
-.customer-link:focus {
+.customer-link:focus,
+.customer-link:active {
   border-color: #404bbf;
   color: #404bbf;
 }
