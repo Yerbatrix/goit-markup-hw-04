@@ -351,8 +351,7 @@ header > .container {
 }
 
 .socialmedia-link:hover,
-.socialmedia-link:focus,
-.socialmedia-link:active {
+.socialmedia-link:focus {
   background-color: #404bbf;
 }
 
