@@ -494,6 +494,7 @@ header > .container {
 .footer-blocks {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 
 .footer-socialmedia {
