@@ -493,7 +493,6 @@ header > .container {
 
 .footer-blocks {
   display: flex;
-  gap: 120px;
   align-items: baseline;
 }
 
@@ -502,11 +501,38 @@ header > .container {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-leftblock {
+  margin-right: 120px;
 }
 
 .socialmedia-footernav {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
+}
+.footer-social-nav-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.footer-social-nac-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-nac-link:hover,
+.footer-social-nac-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-inner-icon {
+  fill: currentColor;
 }
