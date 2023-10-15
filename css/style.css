@@ -476,8 +476,7 @@ header > .container {
 }
 
 .customer-link:hover,
-.customer-link:focus,
-.customer-link:active {
+.customer-link:focus {
   border-color: #404bbf;
   color: #404bbf;
 }
